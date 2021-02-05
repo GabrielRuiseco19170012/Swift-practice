@@ -23,7 +23,7 @@ class Producto: Codable {
         self.disponibilidad = disponibilidad
     }
     
-    func store(){
+    func store(vc:UIViewController){
         //getProducts
         App.shared.productos = self.getProducts()
         App.shared.productos.append(self)
@@ -33,6 +33,7 @@ class Producto: Codable {
             let data = try encoder.encode(App.shared.productos)
             App.shared.defaults.setValue(data, forKey: "productos")
             App.shared.defaults.synchronize()
+            vc.alertDefault(withTitle: "El producto se guardo", whitMsg: "Los datso del producto han sido guardados)
         }catch{
             print("No fue posible realizar la codificacion \(error)")
         }

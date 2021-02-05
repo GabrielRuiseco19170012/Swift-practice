@@ -32,6 +32,8 @@ class ViewController: UIViewController {
         if !nombre.isEmpty && !modelo.isEmpty {
             let producto = Producto(nombre:nombre, modelo: modelo, cantidad: cantidad, precio: precio, disponibilidad: swDisponibilidad.isOn)
             producto.store()
+        }else{
+            self.alertDefault(withTitle: "Faltan campos por llenar", whitMsg: "Revisa que todos los campos esten llenos")
         }
     }
 }
@@ -44,6 +46,6 @@ extension UIViewController{
         }))
         
         self.present(alert, animated: true, completion: nil)
-    }
+    }	
 }
 

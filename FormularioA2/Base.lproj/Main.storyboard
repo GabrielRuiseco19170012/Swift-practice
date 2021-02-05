@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FormularioA2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresa el precio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Knb-kb-dUo">
+                                <rect key="frame" x="40" y="459.5" width="334" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe el nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pjO-aV-f1c">
+                                <rect key="frame" x="40" y="237.5" width="334" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe el modelo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K23-0W-o4e">
+                                <rect key="frame" x="40" y="311.5" width="334" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresa la cantidad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lby-KS-OZt">
+                                <rect key="frame" x="40" y="385.5" width="334" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FdI-Vm-axg">
+                                <rect key="frame" x="40" y="533.5" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar Producto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et5-69-szt">
+                                <rect key="frame" x="101.5" y="124" width="211" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.83288675550000002" green="0.11083249000000001" blue="0.1235171929" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uo-RV-Lur">
+                                <rect key="frame" x="40" y="613.5" width="334" height="30"/>
+                                <color key="backgroundColor" red="0.37300815869999998" green="0.7362130254" blue="0.84869970029999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Guardar Producto"/>
+                                <connections>
+                                    <action selector="guardarProducto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibI-Ms-RAS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lby-KS-OZt" firstAttribute="top" secondItem="K23-0W-o4e" secondAttribute="bottom" constant="40" id="2oy-fY-mks"/>
+                            <constraint firstItem="Et5-69-szt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="2wh-On-dtC"/>
+                            <constraint firstItem="9uo-RV-Lur" firstAttribute="top" secondItem="Knb-kb-dUo" secondAttribute="bottom" constant="120" id="3Ay-vS-Uzx"/>
+                            <constraint firstItem="K23-0W-o4e" firstAttribute="top" secondItem="pjO-aV-f1c" secondAttribute="bottom" constant="40" id="4pf-S9-RUV"/>
+                            <constraint firstItem="K23-0W-o4e" firstAttribute="width" secondItem="pjO-aV-f1c" secondAttribute="width" id="66i-Yn-bOK"/>
+                            <constraint firstItem="9uo-RV-Lur" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6uA-9X-f2z"/>
+                            <constraint firstItem="Lby-KS-OZt" firstAttribute="width" secondItem="K23-0W-o4e" secondAttribute="width" id="Ga1-lF-15T"/>
+                            <constraint firstItem="Knb-kb-dUo" firstAttribute="top" secondItem="Lby-KS-OZt" secondAttribute="bottom" constant="40" id="H3x-fH-vbQ"/>
+                            <constraint firstItem="Knb-kb-dUo" firstAttribute="width" secondItem="Lby-KS-OZt" secondAttribute="width" id="PcJ-nB-tN9"/>
+                            <constraint firstItem="9uo-RV-Lur" firstAttribute="width" secondItem="Knb-kb-dUo" secondAttribute="width" id="SaJ-1a-mzv"/>
+                            <constraint firstItem="Et5-69-szt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aKb-3o-vbj"/>
+                            <constraint firstItem="pjO-aV-f1c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="cLh-DG-a8x"/>
+                            <constraint firstItem="pjO-aV-f1c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hSh-Dk-OWv"/>
+                            <constraint firstItem="Knb-kb-dUo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hrf-Ax-qQJ"/>
+                            <constraint firstItem="Lby-KS-OZt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="niP-XK-cqg"/>
+                            <constraint firstItem="FdI-Vm-axg" firstAttribute="top" secondItem="Knb-kb-dUo" secondAttribute="bottom" constant="40" id="rok-Sn-q5n"/>
+                            <constraint firstItem="K23-0W-o4e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="udT-4X-qwM"/>
+                            <constraint firstItem="pjO-aV-f1c" firstAttribute="top" secondItem="Et5-69-szt" secondAttribute="bottom" constant="80" id="zAF-Ux-uTA"/>
+                            <constraint firstItem="Knb-kb-dUo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zU5-rr-dLb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnGuardar" destination="9uo-RV-Lur" id="37X-xF-y4W"/>
+                        <outlet property="swDisponibilidad" destination="FdI-Vm-axg" id="XnD-iF-DJa"/>
+                        <outlet property="tfCantidadProd" destination="Lby-KS-OZt" id="IB8-JS-dLE"/>
+                        <outlet property="tfModeloProd" destination="K23-0W-o4e" id="E8d-BW-xGU"/>
+                        <outlet property="tfNombreProd" destination="pjO-aV-f1c" id="5Bv-WF-AAa"/>
+                        <outlet property="tfPrecioProd" destination="Knb-kb-dUo" id="MNh-VQ-Cse"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
